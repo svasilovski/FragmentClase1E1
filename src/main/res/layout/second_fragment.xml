@@ -7,6 +7,7 @@
     android:background="@android:color/holo_orange_light">
 
     <TextView
+        android:id="@+id/tv_second_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Second Fragment"/>

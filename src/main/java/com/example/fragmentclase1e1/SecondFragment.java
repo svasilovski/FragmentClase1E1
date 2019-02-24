@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class SecondFragment extends Fragment {
     TextView firstTextView;
 
@@ -16,7 +18,9 @@ public class SecondFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.second_fragment, container, false);
+        View view = inflater.inflate(R.layout.second_fragment, container, false);
+        firstTextView = view.findViewById(R.id.tv_second_fragment);
+        return view;
     }
 
     @Override

@@ -16,7 +16,9 @@ public class FirstFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.first_fragment, container, false);
+        View view = inflater.inflate(R.layout.first_fragment, container, false);
+        firstTextView = view.findViewById(R.id.tv_first_fragment);
+        return view;
     }
 
     @Override
